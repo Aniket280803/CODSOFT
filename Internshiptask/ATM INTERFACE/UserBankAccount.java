@@ -7,26 +7,32 @@ public class UserBankAccount{
 	private double depositAmount;
 	private double withdrawAmount;
 	private double balance;
-	public UserBankAccount (){ 
-		
+	public UserBankAccount ()
+	{ 	
 	}
-	public double getBalance() {
+	public double getBalance()
+	{
 		return balance;
 	}	
-	public void setBalance(double balance) {
+	public void setBalance(double balance) 
+	{
 		this.balance+=balance;
 	}
-	public double getDepositAmount() {
+	public double getDepositAmount() 
+	{
 		return depositAmount;
 	}
 	
-	public void setDepositAmount(double depositAmount) {
+	public void setDepositAmount(double depositAmount) 
+	{
 		this.depositAmount+=depositAmount;
 	}
-	public double getWithdrawAmount() {
+	public double getWithdrawAmount() 
+	{
 		return withdrawAmount;
 	}
-	public void setWithdrawAmount(double withdrawAmount) {
+	public void setWithdrawAmount(double withdrawAmount) 
+	{
 		this.withdrawAmount=withdrawAmount;
 	}
 }
