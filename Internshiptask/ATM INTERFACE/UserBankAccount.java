@@ -1,4 +1,4 @@
-package codsoftInternship;
+package Internshiptask;
 
 public class UserBankAccount{
 	//connect ATM class with user's bank account to access modify account balance
