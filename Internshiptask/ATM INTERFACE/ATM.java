@@ -1,4 +1,4 @@
-package codsoftInternship;
+package Internshiptask;
 
 import java.util.Scanner;
 
@@ -14,20 +14,20 @@ public class ATM {
 				int k;
 				Scanner sc=new Scanner(System.in);
 				System.out.println();
-				System.out.println("           ...HELLO , WELCOME TO THE ATM MACHINE...");
-				System.out.print("              Enter ATM Number : ");
+				System.out.println("           .......HELLO , WELCOME TO THE ATM MACHINE...");
+				System.out.print("                  Enter ATM Number : ");
 				int atmNumber =sc.nextInt();
 				System.out.print("              Enter Pin : ");
 				int pin = sc.nextInt();
 				
 				if((atmnumber == atmNumber)&&(atmpin==pin)) {
 				  while(true) {
-					  System.out.println("       1. View Available Balance");
-					  System.out.println("       2. withdraw amount");
-					  System.out.println("       3. Deposit Amount");
-					  System.out.println("       4. View Mini Statement");
-					  System.out.println("       5. Exit from the application");
-					  System.out.println("       Enter the choice: ");
+					  System.out.println("        1. View Available Balance");
+					  System.out.println("        2. Withdraw Amount");
+					  System.out.println("        3. Deposit Amount");
+					  System.out.println("        4. View Mini Statement");
+					  System.out.println("        5. Exit from the Application");
+					  System.out.println("        Enter the Choice: ");
 		 	     	  int ch=sc.nextInt();
 					  if(ch==1) {  
 						  double viewbalance =0;
@@ -52,11 +52,11 @@ public class ATM {
 						  System.out.println();
 						  System.exit(k=0);
 					  }else {
-						  System.out.println("please enter the correct choice");
+						  System.out.println("Please enter the correct choice");
 					  }
 				  } 
 				}else {
-					System.out.println("incorrect Atm number or pin");
+					System.out.println("Incorrect Atm number or pin");
 
 					System.exit(k= 0);
 				}
