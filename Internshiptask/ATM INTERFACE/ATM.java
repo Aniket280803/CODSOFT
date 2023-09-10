@@ -8,7 +8,7 @@ public class ATM {
 				//implement method for each option, withdraw(amount), deposit(amount), checkBalance
 		        /*display appropriate messages to the user based on their chosen options & success or failure
 				of their transactions*/
-				AtmOperationInterf ss =new AtmOperationImpl();
+				AtmOperationInterf ss =new AtmOperation();
 				int atmnumber= 63066; 
 				int atmpin=789;
 				int k;
