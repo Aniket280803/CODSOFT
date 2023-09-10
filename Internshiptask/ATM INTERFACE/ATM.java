@@ -2,8 +2,10 @@ package Internshiptask;
 
 import java.util.Scanner;
 
-public class ATM {
-	public static void main(String[] args) {
+public class ATM 
+{
+	public static void main(String[] args) 
+	{
 		//Design user interface for ATM, including options withdrawing, depositing & CheckingBalance
 				//implement method for each option, withdraw(amount), deposit(amount), checkBalance
 		        /*display appropriate messages to the user based on their chosen options & success or failure
@@ -20,8 +22,10 @@ public class ATM {
 				System.out.print("              Enter Pin : ");
 				int pin = sc.nextInt();
 				
-				if((atmnumber == atmNumber)&&(atmpin==pin)) {
-				  while(true) {
+				if((atmnumber == atmNumber)&&(atmpin==pin)) 
+				{
+				  while(true)
+					  {
 					  System.out.println("        1. View Available Balance");
 					  System.out.println("        2. Withdraw Amount");
 					  System.out.println("        3. Deposit Amount");
@@ -29,35 +33,43 @@ public class ATM {
 					  System.out.println("        5. Exit from the Application");
 					  System.out.println("        Enter the Choice: ");
 		 	     	  int ch=sc.nextInt();
-					  if(ch==1) {  
+					  if(ch==1) 
+					  {  
 						  double viewbalance =0;
 						  ss.viewBalance(); 
-						  System.out.println("available balance"+viewbalance);
-						
-					  }else if(ch==2) {
+						  System.out.println("available balance"+viewbalance);	
+					  }
+					  else if(ch==2) 
+					  {
 						  System.out.println("Enter amount to withdraw ");
 						  double withdrawAmount= sc.nextDouble();
-						  ss.withdrawAmount(withdrawAmount);
-						  
-					  }else if(ch==3) {				  
+						  ss.withdrawAmount(withdrawAmount);	  
+					  }
+					  else if(ch==3)
+					  {				  
 						  System.out.println("Enter the amount to deposit : ");
 						  double depositAmount=sc.nextDouble();
 						  ss.depositAmount(depositAmount);
-						  
-					  }else if(ch==4) {
+					  }
+					  else if(ch==4) 
+					  {
 						  ss.viewMiniStatement();
-					  }else if(ch==5) {
-						  
+					  }
+					  else if(ch==5)
+					  {	  
 						  System.out.println("  Collect Your ATM Card \n Thank YOU FOR USING the ATM Machine");
 						  System.out.println();
 						  System.exit(k=0);
-					  }else {
+					  }
+					  else
+					  {
 						  System.out.println("Please enter the correct choice");
 					  }
 				  } 
-				}else {
+				}
+				else
+				{
 					System.out.println("Incorrect Atm number or pin");
-
 					System.exit(k= 0);
 				}
 	}
